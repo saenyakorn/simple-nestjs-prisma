@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/user
+###
+POST http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@gmail.com",
+  "password": "John-Doe",
+  "firstName": "John",
+  "lastName": "Doe"
+}
+###
+GET http://localhost:3000/api/user/cl7okufwt0059ucag8ym5hypk
+###
+PUT http://localhost:3000/api/user/cl7okufwt0059ucag8ym5hypk
+Content-Type: application/json 
+
+{
+  "firstName": "Mark",
+  "lastName": "Smith"
+}
+### 
+DELETE http://localhost:3000/api/user/cl7okufwt0059ucag8ym5hypk
+
