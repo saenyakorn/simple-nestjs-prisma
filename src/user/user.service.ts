@@ -42,7 +42,6 @@ export class UserService {
       select: { id: true, email: true, firstName: true, lastName: true },
       where: { id },
     });
-    if (!targetUser) throw new NotFoundException("User doesn't exist.");
     return targetUser;
   }
 

@@ -31,7 +31,6 @@ export class UserController {
   @Get()
   async findAll() {
     const targetUsers = await this.userService.findAll();
-    if (!targetUsers.length) throw new NotFoundException('No users found.');
     return targetUsers;
   }
 
